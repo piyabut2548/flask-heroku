@@ -28,6 +28,7 @@ def hello():
 @app.route('/api', methods=['GET'])
 def get_api():
     return jsonify(data)
+
 @app.route('/hi')
 def hi():
     return:สวัสดี    
