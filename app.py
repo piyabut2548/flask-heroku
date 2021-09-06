@@ -24,6 +24,9 @@ data = [
 @app.route('/')
 def hello():
     return "Hello Flask-Herok"
+@app.route('/hello/<string:name>')
+def hello():
+        return("Hello")
 
 @app.route('/api', methods=['GET'])
 def get_api():
